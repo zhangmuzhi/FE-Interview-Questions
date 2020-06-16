@@ -10,7 +10,7 @@
     "ismobilejs": "^1.0.3",
     "lodash": "^4.17.15",
     "npm-check-updates": "^3.2.2",
-    "vuepress": "^1.5.2"
+    "vuepress": "^1.2.0"
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.0.1",
