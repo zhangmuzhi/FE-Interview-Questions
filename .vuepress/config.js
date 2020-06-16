@@ -110,7 +110,7 @@ module.exports = {
                 heroImage: '/logo.png',
                 tagline: '前端进阶之路',
                 actionText: '快速了解 →',
-                actionLink: '/docs/base/',
+                actionLink: '/docs/base',
                 features: [{
                   title: '基础篇',
                   details: '帮你梳理常见的前端基础面试题'
