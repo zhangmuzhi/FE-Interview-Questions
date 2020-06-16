@@ -1,0 +1,36 @@
+{
+  "name": "FE-Interview-Questions",
+  "version": "1.0.0",
+  "description": "前端面试题整理",
+  "main": "index.js",
+  "dependencies": {
+    "@vuepress/plugin-google-analytics": "^1.2.0",
+    "args": "^5.0.1",
+    "axios": "^0.19.0",
+    "element-ui": "^2.13.2",
+    "ismobilejs": "^1.0.3",
+    "lodash": "^4.17.15",
+    "npm-check-updates": "^3.2.2",
+    "vuepress": "^1.5.2"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.0.1",
+    "@vuepress/plugin-google-analytics": "^1.0.1",
+    "@vuepress/plugin-medium-zoom": "^1.0.1",
+    "@vuepress/plugin-pwa": "^1.0.1"
+  },
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poetries/FE-Interview-Questions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/poetries/FE-Interview-Questions/issues"
+  },
+  "homepage": "https://github.com/poetries/FE-Interview-Questions"
+}
