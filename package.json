@@ -10,9 +10,7 @@
     "ismobilejs": "^1.0.3",
     "lodash": "^4.17.15",
     "npm-check-updates": "^3.2.2",
-    "vuepress": "^1.2.0"
-  },
-  "devDependencies": {
+    "vuepress": "^1.2.0",
     "@vuepress/plugin-back-to-top": "^1.0.1",
     "@vuepress/plugin-google-analytics": "^1.0.1",
     "@vuepress/plugin-medium-zoom": "^1.0.1",
