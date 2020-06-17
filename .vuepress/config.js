@@ -1,25 +1,9 @@
 const _ = require('lodash')
-const header = require('./header')
-const issues = require('./issues')
-const labels = require('./labels')
-
-const issuesByNumber = _.keyBy(issues, 'number')
-const labelsByName = _.keyBy(labels, 'name')
-const GROUP_MAP = {
-  fe: '前端',
-  server: '后端',
-  devops: 'devops',
-  open: '开放式问题',
-  base: '计算机基础'
-}
-
-
-const desc = '每天至少一个问题，有关前端，后端，graphql，devops，微服务以及软技能，促进个人职业成长，敲开大厂之门。'
 
 module.exports = {
   base: '/FE-Interview-Questions/',
   title: 'FE-Interview',
-  description: desc,
+  description: '前端面试题整理',
   head: [
     ['link', { rel: 'icon', href: `/logo.png` }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
@@ -35,6 +19,7 @@ module.exports = {
     ['script', { src: 'https://blog.poetries.top/img-repo/2020/06/openwrite.js' }]
   ],
   themeConfig: {
+    logo: '/logo.png', // 左上角的logo
     nav: [
       { text: '基础', link: '/docs/base' },
       { text: '进阶', link: '/docs/improve' },
