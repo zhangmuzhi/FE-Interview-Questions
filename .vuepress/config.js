@@ -44,13 +44,13 @@ module.exports = {
         ['qa', 'QA']
       ],
     },
-    repo: 'poetries/FE-Interview-Questions',
+    // repo: 'poetries/FE-Interview-Questions',
     lastUpdated: 'Last Updated',
     // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
-    repo: 'poetries/FE-Interview-Questions/tree/dev',
+    // repo: 'poetries/FE-Interview-Questions/tree/dev',
     // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
     // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
-    repoLabel: '查看源码',
+    // repoLabel: '查看源码',
 
     // 以下为可选的编辑链接选项
 
@@ -59,9 +59,9 @@ module.exports = {
     // 假如文档不是放在仓库的根目录下：
     // docsDir: 'docs',
     // 假如文档放在一个特定的分支下：
-    docsBranch: 'dev',
+    // docsBranch: 'dev',
     // 默认是 false, 设置为 true 来启用
-    editLinks: true,
+    editLinks: false,
     // 默认为 "Edit this page"
     editLinkText: '帮助我们改善此页面！'
   },
