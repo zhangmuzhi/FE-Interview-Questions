@@ -4,6 +4,19 @@
 
     <div :class="{ 'theme-default-content': true, lock: isLock }" id="container">
       <Content />
+      <div class="btn-wrap">
+        <el-popover
+          placement="top"
+          title="赞赏作者"
+          trigger="hover"
+        >
+          <div style="color: #dc203b;margin-bottom: 20px">写文不易，如果您觉得文章对你有帮助。打赏激励下作者吧，谢谢支持！ ~(@^_^@)~！</div>
+          <div>
+            <img class="moneny" src="./share.png" />
+          </div>
+          <el-button type="danger" circle slot="reference">赏</el-button>
+        </el-popover>
+      </div>
       <!-- <div class="content-lock">
         <p>扫码关注公众号<span>前端进阶之旅</span>，并发送 <span v-text="code"></span></p>
         <p>即可在关注期间<span>无限制</span>浏览本站全部文章内容</p>
@@ -109,6 +122,14 @@ export default {
 .page
   padding-bottom 2rem
   display block
+
+.btn-wrap 
+  display flex 
+  justify-content center 
+  margin-top 30px
+
+.moneny 
+  width 600px
 
 .content-lock
   display none
