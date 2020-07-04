@@ -4,8 +4,7 @@ node_js:
 
 # S: Build Lifecycle
 install:
-  - npm install cnpm -g
-  - cnpm install
+  - npm install
 
 
 #before_script:
