@@ -4,6 +4,7 @@ node_js:
 
 # S: Build Lifecycle
 install:
+  - npm install core-js -g
   - npm install
 
 
