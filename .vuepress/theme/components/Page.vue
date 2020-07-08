@@ -95,7 +95,7 @@ export default {
           qrcode: 'https://blog.poetries.top/img-repo/2020/06/qrcode.jpg',
           keyword: '验证码',
       });
-    }, 5000);
+    }, 4000);
     this.interval = setInterval(() => {
       let isLock = Object.keys(localStorage).some(v=>v.indexOf('TOKEN_')!==-1)
 
