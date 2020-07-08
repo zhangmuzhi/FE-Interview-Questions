@@ -45,7 +45,7 @@ module.exports = {
       ],
     },
     // repo: 'poetries/FE-Interview-Questions',
-    lastUpdated: 'Last Updated',
+    // lastUpdated: 'Last Updated',
     // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
     // repo: 'poetries/FE-Interview-Questions/tree/dev',
     // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为

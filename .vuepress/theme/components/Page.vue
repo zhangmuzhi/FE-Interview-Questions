@@ -4,24 +4,16 @@
 
     <div :class="{ 'theme-default-content': true, lock: isLock }" id="container">
       <Content />
-      <div class="btn-wrap">
-        <el-popover
-          placement="top"
-          title="赞赏作者"
-          trigger="hover"
-        >
-          <div style="color: #dc203b;margin-bottom: 20px">写文不易，如果您觉得文章对你有帮助。打赏激励下作者吧，谢谢支持！ ~(@^_^@)~！</div>
-          <div>
-            <img class="moneny" src="./share.png" />
-          </div>
-          <el-button type="danger" circle slot="reference">赏</el-button>
-        </el-popover>
-      </div>
       <!-- <div class="content-lock">
         <p>扫码关注公众号<span>前端进阶之旅</span>，并发送 <span v-text="code"></span></p>
         <p>即可在关注期间<span>无限制</span>浏览本站全部文章内容</p>
         <img src="/qrcode.jpg" width="180" height="180">
       </div> -->
+      <div class="btn-wrap">
+        <img class="moneny" src="./share.png" />
+        <div style="color: #dc203b;margin-top: -40px;">写文不易，如果您觉得文章对你有帮助。<br />打赏激励下作者吧，谢谢支持！ ~(@^_^@)~！</div>
+      </div>
+      </div>
       <!-- <div class="readMore-wrapper">
         <a class="readMore">阅读全文</a>
       </div> -->
@@ -75,16 +67,7 @@ export default {
     }
   },
   created() {
-    import("../libs/readmore.js").then(res => {
-      const btw = new BTWPlugin();
-      btw.init({
-          id: 'container',
-          blogId: '22699-1592137983091-414',
-          name: '前端进阶之旅',
-          qrcode: 'https://blog.poetries.top/img-repo/2020/06/qrcode.jpg',
-          keyword: '验证码',
-      });
-    });
+
   },
   async mounted () {
     // const code = getCode()
@@ -103,8 +86,20 @@ export default {
     //     this.lock = true
     //   }
     // }
+    setTimeout(() => {
+      const btw = new BTWPlugin();
+      btw.init({
+          id: 'container',
+          blogId: '22699-1592137983091-414',
+          name: '前端进阶之旅',
+          qrcode: 'https://blog.poetries.top/img-repo/2020/06/qrcode.jpg',
+          keyword: '验证码',
+      });
+    }, 5000);
     this.interval = setInterval(() => {
       let isLock = Object.keys(localStorage).some(v=>v.indexOf('TOKEN_')!==-1)
+
+      console.log(isLock,'isLock')
       if(isLock) {
         this.isLock = !isLock
         clearInterval(this.interval)
@@ -126,10 +121,13 @@ export default {
 .btn-wrap 
   display flex 
   justify-content center 
-  margin-top 30px
+  align-items: center
+  flex-direction column
+  text-align center
 
 .moneny 
-  width 600px
+  width 300px
+  height 300px
 
 .content-lock
   display none
